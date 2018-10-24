@@ -5,7 +5,7 @@
 
 ### Chess Board
 
-I used a grid of 8 rows and 8 columns to model the chess board.
+I used a grid of 8 rows and 8 columns to model the chess board and a tuple to store the position of each square.
 
 ![8x8 Chessboard](chessboard.png)
 
@@ -84,7 +84,7 @@ import chess
 ```
 
 
-## Author
+## Author / Contact
 
 **Edward Tiong**
 
