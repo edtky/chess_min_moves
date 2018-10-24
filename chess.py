@@ -24,7 +24,7 @@ def string_to_tuple(s):
 
 def king_solve(start, end):
     
-    # find x- and y- axis difference between start and end
+    # find row and column difference between start and end
     delta = subtract_tuple(end, start)
     delta_abs = abs_tuple(delta)
 
@@ -137,7 +137,7 @@ def bishop_solve(start, end):
         
         
 # input 1       :  chess piece as a string ('king' or 'knight' or 'bishop')
-# inputs 2, 3   :  start and end positions as a pair of tuple (x,y) on an 8x8 positive x-y coordiates
+# inputs 2, 3   :  start and end positions as a pair of tuple (row,col) on an 8x8 grid
 # outputs 1, 2  :  minimum number of turns as an integer and shortest path as a list of tuples
 
 def chess_min_moves(piece, start, end):
@@ -174,8 +174,8 @@ def chess_min_moves(piece, start, end):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("piece", type=str, help="String containing 'king' or 'knight' or 'bishop'.")
-    parser.add_argument("start", type=str, help="String containing xy values of start point, eg. 12 for (1,2).")
-    parser.add_argument("end", type=str, help="String containing xy values of end point, eg. 68 for (6,8).")
+    parser.add_argument("start", type=str, help="String containing row-col values of start point, eg. 12 for (1,2).")
+    parser.add_argument("end", type=str, help="String containing row-col values of end point, eg. 68 for (6,8).")
     args = parser.parse_args()
     
     start = string_to_tuple(args.start)

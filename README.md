@@ -1,7 +1,13 @@
-#  Chess Minimum Turns
+#  Chess Minimum Moves
 
-Objective (without divulging too much):  
-Finding the minimum number of turns to get to goal position.
+**Objective** (without divulging too much): Finding the minimum number of turns to get to goal position.
+
+
+### Chess Board
+
+I used a grid of 8 rows and 8 columns to model the chess board.
+
+![8x8 Chessboard](chessboard.png)
 
 ## Getting Started
 
@@ -58,8 +64,7 @@ To try new cases with the script, run the code in the following format in your t
 python chess.py [PIECE] [START] [END]
 ```
 
-where [PIECE] is a string representing the chess piece,
-and [START] and [END] are 2-digits representing the xy coordinates of the start and end points.
+where [PIECE] is a string representing the chess piece, and [START] and [END] are 2-digits representing the row and column index of the start and end points.
 
 For example, to find the minimum number of turns for a king to move from (1,3) to (3,7), use:
 ```
@@ -79,15 +84,13 @@ import chess
 ```
 
 
-## Authors
+## Author
 
-* **Edward Tiong** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+**Edward Tiong**
 
+If you face any issues or have any questions, please contact me at edwardtky@berkeley.edu
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Edsger W. Dijkstra for helping me find the shortest path.
+**Edsger W. Dijkstra** for helping me find the shortest path.
